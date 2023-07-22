@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#4DEAE0E0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+
+        android:backgroundTint="#ECE0E0"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="wrap_content"
+          android:layout_height="150dp"
+          android:layout_gravity="center"
+          android:layout_marginStart="45dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="40dp"
+          android:backgroundTint="#F8F0F0"
+          android:contentDescription="@string/ignore"
+          android:scaleType="fitCenter"
+          app:srcCompat="@drawable/icon2" />
+
+      <TextView
+          android:id="@+id/cafehouse"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="50dp"
+          android:fontFamily="cursive"
+          android:gravity="center"
+          android:text="@string/cafe_center"
+          android:textColor="#F3EBEB"
+          android:textSize="60sp"
+          android:textStyle="bold" />
+
+      <Button
+          android:id="@+id/loginBtn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="30dp"
+          android:background="@drawable/btn_gradient"
+          android:text="@string/login" />
+
+      <Button
+          android:id="@+id/registerbtn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/btn_gradient"
+          android:text="@string/register" />
+
+      <TextView
+          android:id="@+id/btnskip"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:gravity="center"
+          android:text="@string/skip"
+          android:textColor="#E6E3E3"
+          android:textStyle="bold" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+</RelativeLayout>
